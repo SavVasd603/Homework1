@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/orange">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/violet">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:text="inConstraintLayout"
+                    android:textSize="25dp"
+                    android:gravity="center_horizontal"
+                    android:padding="11dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/yellow"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/orange2">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:textSize="25dp"
+                    android:text="inFrameLayout"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/blue"
+                >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="250dp"
+                    android:layout_height="90dp"
+                    android:background="@color/darkblue"
+                    android:gravity="center"
+                    android:text="inRelativeLayout"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange2"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/darkblue"
+                    android:gravity="center"
+                    android:text="inRelativeLayout"
+                    android:textColor="@color/orange2"
+
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
